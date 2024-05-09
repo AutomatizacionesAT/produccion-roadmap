@@ -879,30 +879,71 @@ p.nominalBounds = new cjs.Rectangle(0,0,131.4,88.1);
 		{
 			this.gotoAndStop(2);
 		}
-		this.f1bt4.addEventListener("click", fl_MouseClickHandler_5.bind(this));
-		function fl_MouseClickHandler_5()
+		this.f1bt3.addEventListener("click", fl_MouseClickHandler_3.bind(this));
+		function fl_MouseClickHandler_3()
+		{
+			this.gotoAndStop(3);
+		}
+		this.f1bt4.addEventListener("click", fl_MouseClickHandler_4.bind(this));
+		function fl_MouseClickHandler_4()
 		{
 		this.gotoAndStop(4);
+		}
+		this.f1bt5.addEventListener("click", fl_MouseClickHandler_5.bind(this));
+		function fl_MouseClickHandler_5()
+		{
+		this.gotoAndStop(5);
+		}
+		this.f1bt6.addEventListener("click", fl_MouseClickHandler_6.bind(this));
+		function fl_MouseClickHandler_6()
+		{
+		this.gotoAndStop(6);
+		}
+		this.f1bt7.addEventListener("click", fl_MouseClickHandler_7.bind(this));
+		function fl_MouseClickHandler_7()
+		{
+		this.gotoAndStop(7);
+		}
+		this.f1bt8.addEventListener("click", fl_MouseClickHandler_8.bind(this));
+		function fl_MouseClickHandler_8()
+		{
+		this.gotoAndStop(8);
 		}
 	}
 	this.frame_1 = function() {
 		this.stop();
-		this.f2btregresar.addEventListener("click", fl_MouseClickHandler_4.bind(this));
-		function fl_MouseClickHandler_4()
+		this.f2btregresar.addEventListener("click", fl_MouseClickHandler_r2.bind(this));
+		function fl_MouseClickHandler_r2()
+		{
+			this.gotoAndStop(0);
+		}
+	}
+	this.frame_2 = function() {
+		this.stop();
+		this.f3btregresar.addEventListener("click", fl_MouseClickHandler_r3.bind(this));
+		function fl_MouseClickHandler_r3()
+		{
+			this.gotoAndStop(0);
+		}
+	}
+	this.frame_3 = function() {
+		this.stop();
+		this.f4btregresar.addEventListener("click", fl_MouseClickHandler_r4.bind(this));
+		function fl_MouseClickHandler_r4()
 		{
 			this.gotoAndStop(0);
 		}
 	}
 	this.frame_4 = function() {
 		this.stop();
-		this.f5btregresar.addEventListener("click", fl_MouseClickHandler_7.bind(this));
-		function fl_MouseClickHandler_7()
+		this.f5btregresar.addEventListener("click", fl_MouseClickHandler_r5.bind(this));
+		function fl_MouseClickHandler_r5()
 		{
 			this.gotoAndStop(0);
 		}
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(3).call(this.frame_4).wait(29));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1).call(this.frame_3).wait(1).call(this.frame_4).wait(29));
 	// botones
 	this.instance = new lib.marco_video();
 	this.instance.parent = this;
@@ -960,177 +1001,207 @@ p.nominalBounds = new cjs.Rectangle(0,0,131.4,88.1);
 	this.f2btregresar.parent = this;
 	this.f2btregresar.setTransform(56.4,58.5,1,1,0,0,0,39.2,39.2);
 	new cjs.ButtonHelper(this.f2btregresar, 0, 1, 1);
-	this.instance_1 = new lib.Símbolo49();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(58.6,57.6,1,1,0,0,0,39.6,39.6);
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 1);
-	this.instance_2 = new lib.Símbolo51();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(18.6,18.5);
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 1);
+	this.f3btregresar = new lib.Símbolo49();
+	this.f3btregresar.name = "f3btregresar";
+	this.f3btregresar.parent = this;
+	this.f3btregresar.setTransform(58.6,57.6,1,1,0,0,0,39.6,39.6);
+	new cjs.ButtonHelper(this.f3btregresar, 0, 1, 1);
+	this.f4btregresar = new lib.Símbolo51();
+	this.f4btregresar.name = "f4btregresar";
+	this.f4btregresar.parent = this;
+	this.f4btregresar.setTransform(18.6,18.5);
+	new cjs.ButtonHelper(this.f4btregresar, 0, 1, 1);
 	this.f5btregresar = new lib.Símbolo43();
 	this.f5btregresar.name = "f5btregresar";
 	this.f5btregresar.parent = this;
 	this.f5btregresar.setTransform(57.5,58.7,1,1,0,0,0,39.1,39.1);
 	new cjs.ButtonHelper(this.f5btregresar, 0, 1, 1);
-	this.instance_3 = new lib.Símbolo53();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(57.7,58.2,1,1,0,0,0,38.7,38.7);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 1);
-	this.instance_4 = new lib.Símbolo55();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(57.1,57.5,1,1,0,0,0,38.1,38.1);
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 1);
-	this.instance_5 = new lib.Símbolo57();
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(57.6,58,1,1,0,0,0,38.1,38.1);
-	new cjs.ButtonHelper(this.instance_5, 0, 1, 1);
-	this.instance_6 = new lib.Símbolo59();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(57.8,57.9,1,1,0,0,0,38.4,38.4);
-	new cjs.ButtonHelper(this.instance_6, 0, 1, 1);
-	this.instance_7 = new lib.Símbolo61();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(56.9,57.4,1,1,0,0,0,38.8,38.8);
-	new cjs.ButtonHelper(this.instance_7, 0, 1, 1);
-	this.instance_8 = new lib.Símbolo63();
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_8, 0, 1, 1);
-	this.instance_9 = new lib.Símbolo64();
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_9, 0, 1, 1);
-	this.instance_10 = new lib.Símbolo65();
-	this.instance_10.parent = this;
-	this.instance_10.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_10, 0, 1, 1);
-	this.instance_11 = new lib.Símbolo66();
-	this.instance_11.parent = this;
-	this.instance_11.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_11, 0, 1, 1);
-	this.instance_12 = new lib.Símbolo67();
-	this.instance_12.parent = this;
-	this.instance_12.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_12, 0, 1, 1);
-	this.instance_13 = new lib.Símbolo68();
-	this.instance_13.parent = this;
-	this.instance_13.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_13, 0, 1, 1);
-	this.instance_14 = new lib.Símbolo69();
-	this.instance_14.parent = this;
-	this.instance_14.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_14, 0, 1, 1);
-	this.instance_15 = new lib.Símbolo70();
-	this.instance_15.parent = this;
-	this.instance_15.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_15, 0, 1, 1);
-	this.instance_16 = new lib.Símbolo71();
-	this.instance_16.parent = this;
-	this.instance_16.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_16, 0, 1, 1);
-	this.instance_17 = new lib.Símbolo72();
-	this.instance_17.parent = this;
-	this.instance_17.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_17, 0, 1, 1);
-	this.instance_18 = new lib.Símbolo73();
-	this.instance_18.parent = this;
-	this.instance_18.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_18, 0, 1, 1);
-	this.instance_19 = new lib.Símbolo74();
-	this.instance_19.parent = this;
-	this.instance_19.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_19, 0, 1, 1);
-	this.instance_20 = new lib.Símbolo75();
-	this.instance_20.parent = this;
-	this.instance_20.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_20, 0, 1, 1);
-	this.instance_21 = new lib.Símbolo76();
-	this.instance_21.parent = this;
-	this.instance_21.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_21, 0, 1, 1);
-	this.instance_22 = new lib.Símbolo77();
-	this.instance_22.parent = this;
-	this.instance_22.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_22, 0, 1, 1);
-	this.instance_23 = new lib.Símbolo78();
-	this.instance_23.parent = this;
-	this.instance_23.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_23, 0, 1, 1);
-	this.instance_24 = new lib.Símbolo79();
-	this.instance_24.parent = this;
-	this.instance_24.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_24, 0, 1, 1);
-	this.instance_25 = new lib.Símbolo80();
-	this.instance_25.parent = this;
-	this.instance_25.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_25, 0, 1, 1);
-	this.instance_26 = new lib.Símbolo81();
-	this.instance_26.parent = this;
-	this.instance_26.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_26, 0, 1, 1);
-	this.instance_27 = new lib.Símbolo82();
-	this.instance_27.parent = this;
-	this.instance_27.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_27, 0, 1, 1);
-	this.instance_28 = new lib.Símbolo83();
-	this.instance_28.parent = this;
-	this.instance_28.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_28, 0, 1, 1);
-	this.instance_29 = new lib.Símbolo84();
-	this.instance_29.parent = this;
-	this.instance_29.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_29, 0, 1, 1);
-	this.instance_30 = new lib.Símbolo85();
-	this.instance_30.parent = this;
-	this.instance_30.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
-	new cjs.ButtonHelper(this.instance_30, 0, 1, 1);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.f1bt7},{t:this.f1bt8},{t:this.f1bt5},{t:this.f1bt4},{t:this.f1bt6},{t:this.f1bt3},{t:this.f1bt2},{t:this.f1bt1}]}).to({state:[{t:this.f2btregresar},{t:this.text}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.f5btregresar}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_16}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_19}]},1).to({state:[{t:this.instance_20}]},1).to({state:[{t:this.instance_21}]},1).to({state:[{t:this.instance_22}]},1).to({state:[{t:this.instance_23}]},1).to({state:[{t:this.instance_24}]},1).to({state:[{t:this.instance_25}]},1).to({state:[{t:this.instance_26}]},1).to({state:[{t:this.instance_27}]},1).to({state:[{t:this.instance_28}]},1).to({state:[{t:this.instance_29}]},1).to({state:[{t:this.instance_30}]},1).wait(1));
+	this.f6btregresar = new lib.Símbolo53();
+	this.f6btregresar.name = "f6btregresar";
+	this.f6btregresar.parent = this;
+	this.f6btregresar.setTransform(57.7,58.2,1,1,0,0,0,38.7,38.7);
+	new cjs.ButtonHelper(this.f6btregresar, 0, 1, 1);
+	this.f7btregresar = new lib.Símbolo55();
+	this.f7btregresar.name = "f7btregresar";
+	this.f7btregresar.parent = this;
+	this.f7btregresar.setTransform(57.1,57.5,1,1,0,0,0,38.1,38.1);
+	new cjs.ButtonHelper(this.f7btregresar, 0, 1, 1);
+	this.f8btregresar = new lib.Símbolo57();
+	this.f8btregresar.name = "f8btregresar";
+	this.f8btregresar.parent = this;
+	this.f8btregresar.setTransform(57.6,58,1,1,0,0,0,38.1,38.1);
+	new cjs.ButtonHelper(this.f8btregresar, 0, 1, 1);
+	this.f9btregresar = new lib.Símbolo59();
+	this.f9btregresar.name = "f9btregresar";
+	this.f9btregresar.parent = this;
+	this.f9btregresar.setTransform(57.8,57.9,1,1,0,0,0,38.4,38.4);
+	new cjs.ButtonHelper(this.f9btregresar, 0, 1, 1);
+	this.f10btregresar = new lib.Símbolo61();
+	this.f10btregresar.name = "f10btregresar";
+	this.f10btregresar.parent = this;
+	this.f10btregresar.setTransform(56.9,57.4,1,1,0,0,0,38.8,38.8);
+	new cjs.ButtonHelper(this.f10btregresar, 0, 1, 1);
+	this.f11btregresar = new lib.Símbolo63();
+	this.f11btregresar.name = "f11btregresar";
+	this.f11btregresar.parent = this;
+	this.f11btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f11btregresar, 0, 1, 1);
+	this.f12btregresar = new lib.Símbolo64();
+	this.f12btregresar.name = "f12btregresar";
+	this.f12btregresar.parent = this;
+	this.f12btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f12btregresar, 0, 1, 1);
+	this.f13btregresar = new lib.Símbolo65();
+	this.f13btregresar.name = "f13btregresar";
+	this.f13btregresar.parent = this;
+	this.f13btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f13btregresar, 0, 1, 1);
+	this.f14btregresar = new lib.Símbolo66();
+	this.f14btregresar.name = "f14btregresar";
+	this.f14btregresar.parent = this;
+	this.f14btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f14btregresar, 0, 1, 1);
+	this.f15btregresar = new lib.Símbolo67();
+	this.f15btregresar.name = "f15btregresar";
+	this.f15btregresar.parent = this;
+	this.f15btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f15btregresar, 0, 1, 1);
+	this.f16btregresar = new lib.Símbolo68();
+	this.f16btregresar.name = "f16btregresar";
+	this.f16btregresar.parent = this;
+	this.f16btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f16btregresar, 0, 1, 1);
+	this.f17btregresar = new lib.Símbolo69();
+	this.f17btregresar.name = "f17btregresar";
+	this.f17btregresar.parent = this;
+	this.f17btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f17btregresar, 0, 1, 1);
+	this.f18btregresar = new lib.Símbolo70();
+	this.f18btregresar.name = "f18btregresar";
+	this.f18btregresar.parent = this;
+	this.f18btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f18btregresar, 0, 1, 1);
+	this.f19btregresar = new lib.Símbolo71();
+	this.f19btregresar.name = "f19btregresar";
+	this.f19btregresar.parent = this;
+	this.f19btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f19btregresar, 0, 1, 1);
+	this.f20btregresar = new lib.Símbolo72();
+	this.f20btregresar.name = "f20btregresar";
+	this.f20btregresar.parent = this;
+	this.f20btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f20btregresar, 0, 1, 1);
+	this.f21btregresar = new lib.Símbolo73();
+	this.f21btregresar.name = "f21btregresar";
+	this.f21btregresar.parent = this;
+	this.f21btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f21btregresar, 0, 1, 1);
+	this.f22btregresar = new lib.Símbolo74();
+	this.f22btregresar.name = "f22btregresar";
+	this.f22btregresar.parent = this;
+	this.f22btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f22btregresar, 0, 1, 1);
+	this.f23btregresar = new lib.Símbolo75();
+	this.f23btregresar.name = "f23btregresar";
+	this.f23btregresar.parent = this;
+	this.f23btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f23btregresar, 0, 1, 1);
+	this.f24btregresar = new lib.Símbolo76();
+	this.f24btregresar.name = "f24btregresar";
+	this.f24btregresar.parent = this;
+	this.f24btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f24btregresar, 0, 1, 1);
+	this.f25btregresar = new lib.Símbolo77();
+	this.f25btregresar.name = "f25btregresar";
+	this.f25btregresar.parent = this;
+	this.f25btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f25btregresar, 0, 1, 1);
+	this.f26btregresar = new lib.Símbolo78();
+	this.f26btregresar.name = "f26btregresar";
+	this.f26btregresar.parent = this;
+	this.f26btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f26btregresar, 0, 1, 1);
+	this.f27btregresar = new lib.Símbolo79();
+	this.f27btregresar.name = "f27btregresar";
+	this.f27btregresar.parent = this;
+	this.f27btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f27btregresar, 0, 1, 1);
+	this.f28btregresar = new lib.Símbolo80();
+	this.f28btregresar.name = "f28btregresar";
+	this.f28btregresar.parent = this;
+	this.f28btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f28btregresar, 0, 1, 1);
+	this.f29btregresar = new lib.Símbolo81();
+	this.f29btregresar.name = "f29btregresar";
+	this.f29btregresar.parent = this;
+	this.f29btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f29btregresar, 0, 1, 1);
+	this.f30btregresar = new lib.Símbolo82();
+	this.f30btregresar.name = "f30btregresar";
+	this.f30btregresar.parent = this;
+	this.f30btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f30btregresar, 0, 1, 1);
+	this.f31btregresar = new lib.Símbolo83();
+	this.f31btregresar.name = "f31btregresar";
+	this.f31btregresar.parent = this;
+	this.f31btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f31btregresar, 0, 1, 1);
+	this.f32btregresar = new lib.Símbolo84();
+	this.f32btregresar.name = "f32btregresar";
+	this.f32btregresar.parent = this;
+	this.f32btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f32btregresar, 0, 1, 1);
+	this.f33btregresar = new lib.Símbolo85();
+	this.f33btregresar.name = "f33btregresar";
+	this.f33btregresar.parent = this;
+	this.f33btregresar.setTransform(57.5,57.5,1,1,0,0,0,38.3,38.3);
+	new cjs.ButtonHelper(this.f33btregresar, 0, 1, 1);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.f1bt7},{t:this.f1bt8},{t:this.f1bt5},{t:this.f1bt4},{t:this.f1bt6},{t:this.f1bt3},{t:this.f1bt2},{t:this.f1bt1}]}).to({state:[{t:this.f2btregresar},{t:this.text}]},1).to({state:[{t:this.f3btregresar}]},1).to({state:[{t:this.f4btregresar}]},1).to({state:[{t:this.f5btregresar}]},1).to({state:[{t:this.f6btregresar}]},1).to({state:[{t:this.f7btregresar}]},1).to({state:[{t:this.f8btregresar}]},1).to({state:[{t:this.f9btregresar}]},1).to({state:[{t:this.f10btregresar}]},1).to({state:[{t:this.f11btregresar}]},1).to({state:[{t:this.f12btregresar}]},1).to({state:[{t:this.f13btregresar}]},1).to({state:[{t:this.f14btregresar}]},1).to({state:[{t:this.f15btregresar}]},1).to({state:[{t:this.f16btregresar}]},1).to({state:[{t:this.f17btregresar}]},1).to({state:[{t:this.f18btregresar}]},1).to({state:[{t:this.f19btregresar}]},1).to({state:[{t:this.f20btregresar}]},1).to({state:[{t:this.f21btregresar}]},1).to({state:[{t:this.f22btregresar}]},1).to({state:[{t:this.f23btregresar}]},1).to({state:[{t:this.f24btregresar}]},1).to({state:[{t:this.f25btregresar}]},1).to({state:[{t:this.f26btregresar}]},1).to({state:[{t:this.f27btregresar}]},1).to({state:[{t:this.f28btregresar}]},1).to({state:[{t:this.f29btregresar}]},1).to({state:[{t:this.f30btregresar}]},1).to({state:[{t:this.f31btregresar}]},1).to({state:[{t:this.f32btregresar}]},1).to({state:[{t:this.f33btregresar}]},1).wait(1));
 	// Capa_2
-	this.instance_31 = new lib.salaMap();
-	this.instance_31.parent = this;
-	this.instance_31.setTransform(0,0,0.48,0.48);
-	this.instance_32 = new lib.tt_calidad_1();
-	this.instance_32.parent = this;
-	this.instance_32.setTransform(181,58,0.612,0.612);
-	this.instance_33 = new lib.an_Video({'id': 'instance_33', 'src':'videos/Video%20de%20WhatsApp%202024-05-08%20a%20las%2009.54.15_4fdd28d7.mp4', 'autoplay':false, 'controls':true, 'muted':false, 'loop':true, 'poster':'images/', 'preload':true, 'class':'video'});
-	this.instance_33.setTransform(80.9,540.9,1.396,1.047);
-	this.instance_34 = new lib.plantillaData();
-	this.instance_34.parent = this;
-	this.instance_34.setTransform(0,0,0.48,0.48);
-	this.instance_34._off = true;
-	this.instance_35 = new lib.tt_calidad_sales();
-	this.instance_35.parent = this;
-	this.instance_35.setTransform(171,58,0.547,0.547);
-	this.instance_36 = new lib.tt_agile();
-	this.instance_36.parent = this;
-	this.instance_36.setTransform(139,75,0.379,0.379);
-	this.instance_37 = new lib.tt_simulator();
-	this.instance_37.parent = this;
-	this.instance_37.setTransform(226,164,0.358,0.358);
-	this.instance_38 = new lib.btn_simulator();
-	this.instance_38.parent = this;
-	this.instance_38.setTransform(139,508,0.494,0.521);
-	this.instance_39 = new lib.btn_agile();
-	this.instance_39.parent = this;
-	this.instance_39.setTransform(142,331,0.489,0.499);
-	this.instance_40 = new lib.infoWebMexTel02();
-	this.instance_40.parent = this;
-	this.instance_40.setTransform(0,0,0.24,0.24);
-	this.instance_41 = new lib.tt_infoweb_chile();
-	this.instance_41.parent = this;
-	this.instance_41.setTransform(190,71,0.572,0.572);
-	this.instance_42 = new lib.tt_infoweb_colombia();
-	this.instance_42.parent = this;
-	this.instance_42.setTransform(177,55,0.53,0.572);
-	this.instance_43 = new lib.tt_comingSoon();
-	this.instance_43.parent = this;
-	this.instance_43.setTransform(147,82,0.464,0.464);
-	this.instance_44 = new lib.tt_metaverso();
-	this.instance_44.parent = this;
-	this.instance_44.setTransform(159,70,0.537,0.537);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_31}]}).to({state:[{t:this.instance_34},{t:this.instance_33},{t:this.instance_32}]},1).to({state:[{t:this.instance_34},{t:this.instance_35}]},1).to({state:[{t:this.instance_34},{t:this.instance_39},{t:this.instance_38},{t:this.instance_37},{t:this.instance_36}]},1).to({state:[{t:this.instance_40}]},1).to({state:[{t:this.instance_34},{t:this.instance_41}]},1).to({state:[{t:this.instance_34},{t:this.instance_42}]},1).to({state:[{t:this.instance_34},{t:this.instance_43}]},1).to({state:[{t:this.instance_34},{t:this.instance_44}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).to({state:[{t:this.instance_34}]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_34).wait(1).to({_off:false},0).wait(2).to({_off:true},1).wait(1).to({_off:false},0).wait(28));
+	this.instance_1 = new lib.salaMap();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,0,0.48,0.48);
+	this.instance_2 = new lib.tt_calidad_1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(181,58,0.612,0.612);
+	this.instance_3 = new lib.an_Video({'id': 'instance_3', 'src':'videos/Video%20de%20WhatsApp%202024-05-08%20a%20las%2009.54.15_4fdd28d7.mp4', 'autoplay':false, 'controls':true, 'muted':false, 'loop':true, 'poster':'images/', 'preload':true, 'class':'video'});
+	this.instance_3.setTransform(80.9,540.9,1.396,1.047);
+	this.instance_4 = new lib.plantillaData();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(0,0,0.48,0.48);
+	this.instance_4._off = true;
+	this.instance_5 = new lib.tt_calidad_sales();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(171,58,0.547,0.547);
+	this.instance_6 = new lib.tt_agile();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(139,75,0.379,0.379);
+	this.instance_7 = new lib.tt_simulator();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(226,164,0.358,0.358);
+	this.instance_8 = new lib.btn_simulator();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(139,508,0.494,0.521);
+	this.instance_9 = new lib.btn_agile();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(142,331,0.489,0.499);
+	this.instance_10 = new lib.infoWebMexTel02();
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(0,0,0.24,0.24);
+	this.instance_11 = new lib.tt_infoweb_chile();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(190,71,0.572,0.572);
+	this.instance_12 = new lib.tt_infoweb_colombia();
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(177,55,0.53,0.572);
+	this.instance_13 = new lib.tt_comingSoon();
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(147,82,0.464,0.464);
+	this.instance_14 = new lib.tt_metaverso();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(159,70,0.537,0.537);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_4},{t:this.instance_3},{t:this.instance_2}]},1).to({state:[{t:this.instance_4},{t:this.instance_5}]},1).to({state:[{t:this.instance_4},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_4},{t:this.instance_11}]},1).to({state:[{t:this.instance_4},{t:this.instance_12}]},1).to({state:[{t:this.instance_4},{t:this.instance_13}]},1).to({state:[{t:this.instance_4},{t:this.instance_14}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({_off:false},0).wait(2).to({_off:true},1).wait(1).to({_off:false},0).wait(28));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(360,540,720,1080);
 // library properties:
